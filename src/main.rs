@@ -1,4 +1,4 @@
-use math_matrix::*;
+use matrix_determinant::*;
 use std::io::Write;
 use std::{io, io::Error, io::ErrorKind};
 

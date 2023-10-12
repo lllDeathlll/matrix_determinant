@@ -1,5 +1,5 @@
 [package]
-name = "math_matrix"
+name = "matrix_determinant"
 version = "0.1.0"
 edition = "2021"
 
