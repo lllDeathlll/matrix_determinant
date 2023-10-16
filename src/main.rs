@@ -18,9 +18,9 @@ fn main() {
     let choice: i32 = match choice.trim().parse() {
         Ok(num) => num,
         Err(err) => match err.to_string().as_str() {
-            "invalid float literal" => panic!("Value must be a number!"),
-            "cannot parse float from empty string" => panic!("You must enter a number!"),
-            _ => panic!("Error!"),
+            "invalid digit found in string" => panic!("Value must be a number!"),
+            "cannot parse integer from empty string" => panic!("You must enter a number!"),
+            _ => panic!("Error! {}", err),
         },
     };
 
@@ -67,6 +67,7 @@ fn main() {
 }
 
 /*
+Gets and returns f64 from use input
  */
 fn get_f64() -> Result<f64, Error> {
     let mut x = String::new();
